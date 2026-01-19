@@ -44,7 +44,6 @@
             padding: 0 20px;
         }
 
-        /* Binary background animation - Enhanced */
         .binary-bg {
             position: fixed;
             top: 0;
@@ -73,7 +72,6 @@
             }
         }
 
-        /* Navigation Bar */
         nav {
             position: fixed;
             top: 0;
@@ -154,7 +152,6 @@
             cursor: pointer;
         }
 
-        /* Hero section - Updated with profile image */
         .hero {
             padding: 120px 0 60px;
             display: flex;
@@ -202,7 +199,6 @@
             box-shadow: 0 0 30px var(--primary), 0 0 60px rgba(0, 255, 157, 0.3);
         }
 
-        /* Animated Name Styling - Updated for single cursor */
         .animated-name-container {
             font-size: 3.5rem;
             margin-bottom: 15px;
@@ -309,7 +305,6 @@
             transform-origin: left;
         }
 
-        /* Contact info */
         .contact-info {
             display: flex;
             flex-wrap: wrap;
@@ -353,7 +348,6 @@
             transform: rotate(360deg);
         }
 
-        /* Download CV Button */
         .download-cv-btn {
             display: inline-flex;
             align-items: center;
@@ -397,7 +391,6 @@
             background: linear-gradient(45deg, var(--secondary), var(--primary));
         }
 
-        /* Social links */
         .social-links {
             display: flex;
             gap: 15px;
@@ -442,7 +435,6 @@
             box-shadow: 0 0 20px var(--secondary);
         }
 
-        /* Section styles */
         section {
             padding: 80px 0;
             border-bottom: 1px solid rgba(0, 255, 157, 0.1);
@@ -486,7 +478,6 @@
             opacity: 0.7;
         }
 
-        /* Timeline styles */
         .timeline {
             position: relative;
             max-width: 900px;
@@ -583,7 +574,6 @@
             font-weight: bold;
         }
 
-        /* Projects grid */
         .projects-grid, .experience-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
@@ -685,7 +675,6 @@
             left: -15px;
         }
 
-        /* Skills/Interest */
         .skills-container {
             display: flex;
             flex-wrap: wrap;
@@ -767,7 +756,6 @@
             box-shadow: 0 5px 15px rgba(0, 255, 157, 0.2);
         }
 
-        /* Footer */
         footer {
             padding: 60px 0 40px;
             text-align: center;
@@ -809,7 +797,6 @@
             100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(0, 255, 157, 0); }
         }
 
-        /* Matrix rain effect */
         .matrix-rain {
             position: fixed;
             top: 0;
@@ -821,7 +808,6 @@
             opacity: 0.03;
         }
 
-        /* Scroll progress indicator */
         .scroll-progress {
             position: fixed;
             top: 0;
@@ -839,7 +825,6 @@
             transition: width 0.1s ease;
         }
 
-        /* Additional animations */
         .fade-in {
             opacity: 0;
             transform: translateY(30px);
@@ -851,7 +836,6 @@
             transform: translateY(0);
         }
 
-        /* Responsive adjustments */
         @media (max-width: 992px) {
             .nav-links {
                 position: fixed;
@@ -968,12 +952,10 @@
     </style>
 </head>
 <body>
-    <!-- Scroll progress indicator -->
     <div class="scroll-progress">
         <div class="scroll-progress-bar" id="scrollProgress"></div>
     </div>
 
-    <!-- Navigation Bar -->
     <nav>
         <div class="nav-container">
             <a href="#home" class="nav-logo">
@@ -996,24 +978,19 @@
         </div>
     </nav>
 
-    <!-- Binary background animation -->
     <div class="binary-bg" id="binaryContainer"></div>
 
-    <!-- Matrix rain effect -->
     <div class="matrix-rain" id="matrixRain"></div>
 
     <div class="container">
-        <!-- Hero Section -->
         <section id="home" class="hero">
             <div class="hero-text fade-in">
-                <!-- Animated Name - Single cursor, infinite typing -->
                 <div class="animated-name-container">
                     <div class="animated-name">
                         <span id="fullName"></span>
                     </div>
                 </div>
                 
-                <!-- Rotating Taglines -->
                 <div class="rotating-taglines">
                     <div class="tagline-container">
                         <div class="tagline active" id="tagline1">Computer Science Undergrad</div>
@@ -1025,7 +1002,6 @@
                 
                 <p>Passionate about <span class="highlight">Human-Computer Interaction</span>, <span class="highlight">AI & ML</span>, and building <span class="highlight">advanced web & mobile applications</span> with a focus on security and innovative UI/UX design.</p>
                 
-                <!-- Download CV Button -->
                 <a href="afnan_shahriar_cv_updated.pdf" class="download-cv-btn" download>
                     <i class="fas fa-download"></i>
                     Download My CV
@@ -1056,12 +1032,10 @@
             </div>
             
             <div class="hero-image fade-in">
-                <!-- Profile image - replace 'formal.png' with your actual image -->
                 <img src="formal.png" alt="Afnan Shahriar" class="profile-img" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80'">
             </div>
         </section>
 
-        <!-- Education Section -->
         <section id="education">
             <h2 class="section-title fade-in">Education & Achievements</h2>
             
@@ -1108,7 +1082,6 @@
             </div>
         </section>
 
-        <!-- Work Experience Section -->
         <section id="experience">
             <h2 class="section-title fade-in">Work Experience</h2>
             
@@ -1156,7 +1129,6 @@
             </div>
         </section>
 
-        <!-- Projects Section -->
         <section id="projects">
             <h2 class="section-title fade-in">Projects</h2>
             
@@ -1211,7 +1183,6 @@
             </div>
         </section>
 
-        <!-- Skills Section -->
         <section id="skills">
             <h2 class="section-title fade-in">Interests & Skills</h2>
             
@@ -1260,7 +1231,6 @@
             </div>
         </section>
 
-        <!-- Volunteering Section -->
         <section id="volunteering">
             <h2 class="section-title fade-in">Volunteering</h2>
             
@@ -1326,7 +1296,6 @@
     </div>
 
     <script>
-        // Binary background animation
         function createBinary() {
             const container = document.getElementById('binaryContainer');
             const binaryChars = ['0', '1', '//', '{}', '<>', '[]'];
@@ -1345,7 +1314,6 @@
             }
         }
 
-        // Matrix rain effect
         function createMatrixRain() {
             const container = document.getElementById('matrixRain');
             const characters = 'アァカサタナハマヤャラワガザダバパイィキシチニヒミリヰギジヂビピウゥクスツヌフムユュルグズブヅプエェケセテネヘメレヱゲゼデベペオォコソトノホモヨョロヲゴゾドボポヴッン0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ';
@@ -1376,7 +1344,6 @@
                 container.appendChild(column);
             }
             
-            // Add keyframes for matrix rain
             const style = document.createElement('style');
             style.textContent = `
                 @keyframes matrixRain {
@@ -1389,7 +1356,6 @@
             document.head.appendChild(style);
         }
 
-        // Scroll progress indicator
         function updateScrollProgress() {
             const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
             const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
@@ -1397,7 +1363,6 @@
             document.getElementById("scrollProgress").style.width = scrolled + "%";
         }
 
-        // Scroll animation for fade-in elements
         function checkScroll() {
             const fadeElements = document.querySelectorAll('.fade-in');
             
@@ -1411,7 +1376,6 @@
             });
         }
 
-        // Mobile menu toggle
         function setupMobileMenu() {
             const mobileMenuBtn = document.getElementById('mobileMenuBtn');
             const navLinks = document.getElementById('navLinks');
@@ -1423,7 +1387,6 @@
                     : '<i class="fas fa-bars"></i>';
             });
             
-            // Close mobile menu when clicking a link
             document.querySelectorAll('.nav-link').forEach(link => {
                 link.addEventListener('click', () => {
                     navLinks.classList.remove('active');
@@ -1432,7 +1395,6 @@
             });
         }
 
-        // Smooth scroll for navigation links
         function setupSmoothScroll() {
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function (e) {
@@ -1452,7 +1414,6 @@
             });
         }
 
-        // Add hover effect to cards
         function setupCardHoverEffects() {
             const cards = document.querySelectorAll('.project-card, .experience-card');
             cards.forEach(card => {
@@ -1466,7 +1427,6 @@
             });
         }
 
-        // Infinite Name Typing Effect with single cursor
         function animateName() {
             const fullName = "Afnan Shahriar";
             const nameElement = document.getElementById('fullName');
@@ -1481,49 +1441,39 @@
                     index++;
                     setTimeout(typeName, 100);
                 } else if (isTyping && index >= fullName.length) {
-                    // Finished typing, pause then start deleting
                     isTyping = false;
                     isDeleting = true;
-                    setTimeout(typeName, 1000); // Pause for 1 second
+                    setTimeout(typeName, 1000);
                 } else if (isDeleting && index > 0) {
                     // Deleting backward
                     nameElement.textContent = fullName.substring(0, index - 1);
                     index--;
-                    setTimeout(typeName, 50); // Faster deletion
+                    setTimeout(typeName, 50);
                 } else if (isDeleting && index <= 0) {
-                    // Finished deleting, restart typing
                     isDeleting = false;
                     isTyping = true;
-                    setTimeout(typeName, 300); // Short pause before restart
+                    setTimeout(typeName, 300);
                 }
             }
             
-            // Start the animation
             setTimeout(typeName, 500);
         }
 
-        // Rotating Taglines
         function setupRotatingTaglines() {
             const taglines = document.querySelectorAll('.tagline');
             let currentIndex = 0;
             
-            // Show first tagline
             taglines[currentIndex].classList.add('active');
             
-            // Rotate taglines every 3 seconds
             setInterval(() => {
-                // Hide current tagline
                 taglines[currentIndex].classList.remove('active');
                 
-                // Move to next tagline
                 currentIndex = (currentIndex + 1) % taglines.length;
                 
-                // Show next tagline
                 taglines[currentIndex].classList.add('active');
             }, 3000);
         }
 
-        // Initialize animations and effects
         document.addEventListener('DOMContentLoaded', function() {
             createBinary();
             createMatrixRain();
@@ -1532,19 +1482,15 @@
             setupSmoothScroll();
             setupCardHoverEffects();
             
-            // Start infinite name animation
             animateName();
             
-            // Start rotating taglines
-            setTimeout(setupRotatingTaglines, 2500); // Start after name animation begins
+            setTimeout(setupRotatingTaglines, 2500);
             
-            // Add scroll event listeners
             window.addEventListener('scroll', () => {
                 updateScrollProgress();
                 checkScroll();
             });
             
-            // Initial check for elements in view
             updateScrollProgress();
         });
 
