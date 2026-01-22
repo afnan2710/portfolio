@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio of Afnan Shahriar</title>
+    <link rel="icon" type="image/png" href="portfolio_favicon.png">
+    <link rel="apple-touch-icon" href="portfolio_favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Exo+2:wght@300;400;600&display=swap"
@@ -1841,7 +1843,6 @@
             const themeToggle = document.getElementById('themeToggle');
             const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
 
-            // Check for saved theme or prefer color scheme
             const savedTheme = localStorage.getItem('theme');
             if (savedTheme) {
                 document.body.classList.toggle('light-mode', savedTheme === 'light');
@@ -1853,15 +1854,11 @@
             themeToggle.addEventListener('click', () => {
                 document.body.classList.toggle('light-mode');
 
-                // Save theme preference
                 const isLightMode = document.body.classList.contains('light-mode');
                 localStorage.setItem('theme', isLightMode ? 'light' : 'dark');
-
-                // Update binary characters color for light mode
                 updateBinaryColors();
             });
 
-            // Update binary colors when theme changes
             function updateBinaryColors() {
                 const binaryElements = document.querySelectorAll('.binary');
                 binaryElements.forEach(binary => {
