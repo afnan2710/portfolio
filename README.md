@@ -1,2 +1,2 @@
-# afnan2710.github.io/portfolio
+# https://afnanshahriar.vercel.app
 My personal portfolio website
