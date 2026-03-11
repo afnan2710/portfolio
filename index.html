@@ -1,425 +1,465 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Afnan Shahriar | Portfolio</title>
-    <link rel="icon" type="image/png" href="assets/images/portfolio_favicon.png">
-    <link rel="apple-touch-icon" href="assets/images/portfolio_favicon.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Exo+2:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Afnan Shahriar | Portfolio</title>
+  <link rel="icon" type="image/png" href="assets/images/portfolio_favicon.png">
+  <link rel="apple-touch-icon" href="assets/images/portfolio_favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
-
 <body>
-    <div class="scroll-progress">
-        <div class="scroll-progress-bar" id="scrollProgress"></div>
-    </div>
+  <div class="scroll-progress">
+    <div class="scroll-progress-bar" id="scrollProgress"></div>
+  </div>
 
-    <nav>
-        <div class="nav-container">
-            <a href="#home" class="nav-logo">
-                <i class="fas fa-code"></i>
-                <span>Afnan Shahriar</span>
-            </a>
-
-            <div style="display: flex; align-items: center;">
-                <div class="nav-links" id="navLinks">
-                    <a href="#home" class="nav-link">Home</a>
-                    <a href="#education" class="nav-link">Education</a>
-                    <a href="#experience" class="nav-link">Experience</a>
-                    <a href="#projects" class="nav-link">Projects</a>
-                    <a href="#skills" class="nav-link">Skills</a>
-                    <a href="#extracurricular" class="nav-link">Extracurricular Activities</a>
-                </div>
-
-                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">
-                    <i class="fas fa-moon"></i>
-                    <i class="fas fa-sun"></i>
-                </button>
-
-                <button class="mobile-menu-btn" id="mobileMenuBtn">
-                    <i class="fas fa-bars"></i>
-                </button>
-            </div>
-        </div>
-    </nav>
-
-    <div class="binary-bg" id="binaryContainer"></div>
-
-    <div class="matrix-rain" id="matrixRain"></div>
-
-    <div class="container">
-        <section id="home" class="hero">
-            <div class="hero-text fade-in">
-                <div class="animated-name-container">
-                    <div class="animated-name">
-                        <span id="fullName"></span>
-                    </div>
-                </div>
-
-                <p>Passionate about <span class="highlight">Human-Computer Interaction</span>, <span
-                        class="highlight">AI & ML</span> and building <span class="highlight">advanced web & mobile
-                        applications</span> with a focus on security and innovative UI/UX design.</p>
-
-                <a href="files/afnan_shahriar_cv_updated.pdf" class="download-cv-btn" download>
-                    <i class="fas fa-download"></i>
-                    Download My CV
-                </a>
-
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <div class="icon"><i class="fas fa-envelope"></i></div>
-                        <div>afnan.shahriar27@gmail.com</div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="icon"><i class="fas fa-phone"></i></div>
-                        <div>+880 1601-701444</div>
-                    </div>
-                </div>
-
-                <div class="social-links">
-                    <a href="https://github.com/afnan2710" class="social-link" target="_blank">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://linkedin.com/in/afnan-shahriar-504894358/" class="social-link" target="_blank">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="https://facebook.com/afnan2710" class="social-link" target="_blank">
-                        <i class="fab fa-facebook"></i>
-                    </a>
-                </div>
-            </div>
-
-            <div class="hero-image fade-in">
-                <img src="assets/images/formal.png" alt="Afnan Shahriar" class="profile-img"
-                    onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80'">
-            </div>
-        </section>
-
-        <section id="education">
-            <h2 class="section-title fade-in">Education & Achievements</h2>
-
-            <div class="timeline">
-                <div class="timeline-item fade-in">
-                    <div class="timeline-icon"><i class="fas fa-university"></i></div>
-                    <div class="timeline-content">
-                        <h3 class="timeline-title">Bachelor of Science, Computer Science and Engineering
-                            <span class="timeline-date">February 2022 - Present</span>
-                        </h3>
-                        <p><strong>United International University (UIU)</strong></p>
-                        <p>CGPA – <span class="highlight">3.68 out of 4</span></p>
-                        <ul class="achievement-list">
-                            <li>Got merit scholarships up to 50% based on academic excellence</li>
-                            <li>Champion (FYDP-I), UIU CSE Project Show, Summer'25</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="timeline-item fade-in">
-                    <div class="timeline-icon"><i class="fas fa-graduation-cap"></i></div>
-                    <div class="timeline-content">
-                        <h3 class="timeline-title">Higher Secondary Certificate (HSC)
-                            <span class="timeline-date">July 2018 – Jun 2020</span>
-                        </h3>
-                        <p><strong>Government City College, Chattogram</strong></p>
-                        <p>GPA – <span class="highlight">5.00 out of 5 (Golden)</span></p>
-                        <ul class="achievement-list">
-                            <li>1st Runners Up, Intra College Science Fair 2019</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="timeline-item fade-in">
-                    <div class="timeline-icon"><i class="fas fa-school"></i></div>
-                    <div class="timeline-content">
-                        <h3 class="timeline-title">Secondary School Certificate (SSC)
-                            <span class="timeline-date">January 2016 – December 2017</span>
-                        </h3>
-                        <p><strong>Chattogram Collegiate School</strong></p>
-                        <p>GPA – <span class="highlight">5.00 out of 5</span></p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="experience">
-            <h2 class="section-title fade-in">Work Experience</h2>
-
-            <div class="experience-grid">
-                <div class="experience-card fade-in">
-                    <div class="experience-content">
-                        <h3 class="experience-title">Intern, Project Management Associate & Data Visualization
-                            <span class="exp-date">04/2025 - 05/2025</span>
-                        </h3>
-                        <div class="company-name">Excelerate (Remote Work)</div>
-                        <p>Excelerate, based in Dubai, is a global platform that enhances career readiness through
-                            experiential learning. It offers virtual internships, competitions, masterclasses, and
-                            courses, bridging the gap between education and real-world skills.</p>
-                    </div>
-                </div>
-
-                <div class="experience-card fade-in">
-                    <div class="experience-content">
-                        <h3 class="experience-title">Intern, Operations Management Department
-                            <span class="exp-date">03/2025 - 07/2025</span>
-                        </h3>
-                        <div class="company-name">Youth School for Social Entrepreneurs (Remote Work - Virtual
-                            Internship)</div>
-                        <p>YSSE is a Bangladesh-based non-profit that empowers young social entrepreneurs by providing
-                            training, mentorship, and networking opportunities.</p>
-                        <ul class="responsibilities">
-                            <li>Assisted in streamlining operational processes to enhance efficiency</li>
-                            <li>Coordinated logistics and resource allocation for events and programs</li>
-                            <li>Supported data management and reporting for strategic decision-making</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="experience-card fade-in">
-                    <div class="experience-content">
-                        <h3 class="experience-title">Campus Ambassador
-                            <span class="exp-date">05/2023 - 08/2024</span>
-                        </h3>
-                        <div class="company-name">Interactive Cares, Shayamoli, Dhaka</div>
-                        <p>Interactive Cares is an online learning platform that provides educational services,
-                            including courses and career counseling, aimed at enhancing skill development and
-                            professional growth.</p>
-                        <ul class="responsibilities">
-                            <li>Promoted courses and events to boost campus engagement</li>
-                            <li>Improved platform engagement by organizing high-impact workshops</li>
-                            <li>Collected student feedback for service improvement</li>
-                            <li>Managed social media outreach to enhance brand visibility</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="projects">
-            <h2 class="section-title fade-in">Projects</h2>
-
-            <div class="projects-grid">
-                <div class="project-card fade-in">
-                    <div class="project-content">
-                        <h3 class="project-title">SafeRideBD
-                            <span class="project-date">In Progress</span>
-                        </h3>
-                        <p>Smart Fare Calculation, Route Suggestion and Safety System in Dhaka City. A comprehensive
-                            solution for urban transportation challenges.</p>
-                        <a href="https://github.com/afnan2710/saferidebd" class="project-link" target="_blank">
-                            <span>View Repository</span>
-                            <i class="fas fa-external-link-alt"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="project-card fade-in">
-                    <div class="project-content">
-                        <h3 class="project-title">Green Legacy
-                            <span class="project-date">Completed</span>
-                        </h3>
-                        <p>Sustainable Plant Marketplace, AI-driven Community Platform for Ensuring a Greener World.
-                            Combining e-commerce with environmental consciousness.</p>
-                        <a href="https://github.com/afnan2710/greenlegacy_main" class="project-link" target="_blank">
-                            <span>View Repository</span>
-                            <i class="fas fa-external-link-alt"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="project-card fade-in">
-                    <div class="project-content">
-                        <h3 class="project-title">EmpowerHub
-                            <span class="project-date">Completed</span>
-                        </h3>
-                        <p>E-Learning and Skill Exchange Platform designed to democratize education and create
-                            opportunities for knowledge sharing.</p>
-                        <a href="https://github.com/afnan2710/empowerhub" class="project-link" target="_blank">
-                            <span>View Repository</span>
-                            <i class="fas fa-external-link-alt"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="project-card fade-in">
-                    <div class="project-content">
-                        <h3 class="project-title">RailSafe
-                            <span class="project-date">Completed</span>
-                        </h3>
-                        <p>Automated Railway Crack Detection Robot using computer vision and robotics to enhance railway
-                            safety and maintenance efficiency.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="skills">
-            <h2 class="section-title fade-in">Interests & Skills</h2>
-
-            <div class="skills-container">
-                <div class="skill-category fade-in">
-                    <h3>Core Interests</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">HCI (Human-Computer Interaction)</span>
-                        <span class="skill-tag">AI & Machine Learning</span>
-                        <span class="skill-tag">Data Science</span>
-                        <span class="skill-tag">Software Engineering</span>
-                        <span class="skill-tag">UI/UX Design</span>
-                        <span class="skill-tag">Advanced Web Development</span>
-                        <span class="skill-tag">Mobile App Development</span>
-                        <span class="skill-tag">Computer Security</span>
-                        <span class="skill-tag">Cloud Computing</span>
-                        <span class="skill-tag">Internet of Things (IoT)</span>
-                        <span class="skill-tag">Blockchain Technology</span>
-                        <span class="skill-tag">DevOps Practices</span>
-                    </div>
-                </div>
-
-                <div class="skill-category fade-in">
-                    <h3>Technical Skills</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">MySQL</span>
-                        <span class="skill-tag">PHP</span>
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">Java</span>
-                        <span class="skill-tag">C/C++</span>
-                        <span class="skill-tag">Data Structures & Algorithms</span>
-                        <span class="skill-tag">React.js</span>
-                        <span class="skill-tag">Node.js</span>
-                        <span class="skill-tag">Flutter</span>
-                        <span class="skill-tag">Microsoft Office</span>
-                        <span class="skill-tag">Google Workspace</span>
-                        <span class="skill-tag">Canva</span>
-                        <span class="skill-tag">Photoshop</span>
-                        <span class="skill-tag">Figma</span>
-                        <span class="skill-tag">Git & GitHub</span>
-                        <span class="skill-tag">Linux</span>
-                        <span class="skill-tag">Jira (Project Management)</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="extracurricular">
-            <h2 class="section-title fade-in">Extracurricular Activities</h2>
-
-            <div class="experience-grid">
-                <div class="experience-card fade-in">
-                    <div class="experience-content">
-                        <h3 class="experience-title">Head, Research & Development (R&D)
-                            <span class="exp-date">2024 - Present</span>
-                        </h3>
-                        <div class="company-name">UIU English Language Forum (UIUELF)</div>
-                        <p>Engaged in research and development activities to enhance English language teaching and learning methodologies.</p>
-                    </div>
-                </div>
-            
-                <div class="experience-card fade-in">
-                    <div class="experience-content">
-                        <h3 class="experience-title">General Member
-                            <span class="exp-date">2024 - Present</span>
-                        </h3>
-                        <div class="company-name">UIU App Forum (UIUAPPF)</div>
-                    </div>
-                </div>
-            
-                <div class="experience-card fade-in">
-                    <div class="experience-content">
-                        <h3 class="experience-title">General Member
-                            <span class="exp-date">2025 - Present</span>
-                        </h3>
-                        <div class="company-name">UIU Data Science Club (UIUDSC)</div>
-                    </div>
-                </div>
-            </div>
-        </section>
+  <header class="site-header">
+    <div class="header-container">
+      <a href="#home" class="logo-group">
+        <i class="fas fa-terminal"></i>
+        <span class="logo-name">afnan.shahriar</span>
+      </a>
+      <nav class="desktop-nav">
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
         
-        <section id="volunteering">
-            <h2 class="section-title fade-in">Volunteering</h2>
-
-            <div class="experience-grid">
-                <div class="experience-card fade-in">
-                    <div class="experience-content">
-                        <h3 class="experience-title">Invigilator, IELTS Exam
-                            <span class="exp-date">01/02/2026</span>
-                        </h3>
-                        <div class="company-name">IDP Education, Gulshan, Dhaka</div>
-                        <p>IELTS Exam Invigilation</p>
-                        <ul class="responsibilities">
-                            <li>Ensured exam integrity and security</li>
-                            <li>Facilitated smooth exam administration</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="experience-card fade-in">
-                    <div class="experience-content">
-                        <h3 class="experience-title">Volunteer, Operations
-                            <span class="exp-date">02/2025</span>
-                        </h3>
-                        <div class="company-name">IDP Education, Gulshan, Dhaka</div>
-                        <p>Study World Dhaka Multi Destination Roadshow (UK, USA, Canada)</p>
-                        <ul class="responsibilities">
-                            <li>Managed event logistics and assisted in coordinating attendee registrations</li>
-                            <li>Facilitated smooth operations by supporting exhibitors and participants</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="experience-card fade-in">
-                    <div class="experience-content">
-                        <h3 class="experience-title">General Secretary
-                            <span class="exp-date">2021 - 2022</span>
-                        </h3>
-                        <div class="company-name">Team Swapno, Chattogram</div>
-                        <p>Team Swapno is a Bangladeshi youth volunteer group dedicated to social welfare, education,
-                            and empowerment.</p>
-                        <ul class="responsibilities">
-                            <li>Led community service projects for effective impact</li>
-                            <li>Coordinated team operations and volunteer efforts</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <footer>
-            <div class="social-links" style="justify-content: center;">
-                <a href="https://github.com/afnan2710" class="social-link" target="_blank">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://linkedin.com/in/afnan-shahriar-504894358/" class="social-link" target="_blank">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="https://facebook.com/afnan2710" class="social-link" target="_blank">
-                    <i class="fab fa-facebook"></i>
-                </a>
-                <a href="mailto:afnan.shahriar27@gmail.com" class="social-link" target="_blank">
-                    <i class="fas fa-envelope"></i>
-                </a>
-            </div>
-
-            <div class="contact-info" style="justify-content: center; margin-top: 20px;">
-                <div class="contact-item">
-                    <div class="icon"><i class="fas fa-phone"></i></div>
-                    <div>+880 1601-701444</div>
-                </div>
-            </div>
-
-            <p class="copyright">
-                <span class="pulse"></span>
-                Crafted with passion by Afnan Shahriar • © 2026
-            </p>
-        </footer>
+        <!-- Dropdown Menu -->
+        <div class="dropdown">
+          <a href="#" class="dropdown-trigger">More <i class="fas fa-chevron-down"></i></a>
+          <div class="dropdown-menu">
+            <a href="#achievements">Achievements</a>
+            <a href="#skills">Skills</a>
+            <a href="#extracurricular">Activities</a>
+            <a href="#volunteering">Volunteering</a>
+            <a href="#certifications">Certifications</a>
+            <a href="#references">References</a>
+          </div>
+        </div>
+      </nav>
+      <div class="header-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="dark/light mode">
+          <i class="fas fa-moon"></i>
+          <i class="fas fa-sun"></i>
+        </button>
+        <button class="menu-toggle" id="menuToggle" aria-label="menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
     </div>
+    <nav class="mobile-drawer" id="mobileDrawer">
+      <a href="#education" class="drawer-link">Education</a>
+      <a href="#experience" class="drawer-link">Experience</a>
+      <a href="#projects" class="drawer-link">Projects</a>
+      <a href="#achievements" class="drawer-link">Achievements</a>
+      <a href="#skills" class="drawer-link">Skills</a>
+      <a href="#extracurricular" class="drawer-link">Activities</a>
+      <a href="#volunteering" class="drawer-link">Volunteering</a>
+      <a href="#certifications" class="drawer-link">Certifications</a>
+      <a href="#references" class="drawer-link">References</a>
+    </nav>
+  </header>
 
-    <a href="https://wa.me/8801601701444" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
-        <i class="fab fa-whatsapp"></i>
-    </a>
+  <main>
+    <section id="home" class="section hero-section">
+      <div class="hero-grid">
+        <div class="hero-text animate-slide-up">
+          <h1 class="hero-name">Hi! I'm Afnan</h1>
+          <div class="hero-role">
+            <span class="typed-role" id="typedRole"></span>
+          </div>
+          <p class="hero-bio">
+            Passionate about <span class="mark">Human Computer Interaction</span>, 
+            <span class="mark">Artificial Intelligence</span>,
+            <span class="mark">Machine Learning</span>, crafting 
+            <span class="mark">secured and advanced web & mobile applications</span>.
+          </p>
+          <div class="hero-cta">
+            <a href="files/afnan_shahriar_cv_updated.pdf" class="btn-primary" target="_blank">
+              <i class="fas fa-file-pdf"></i> View Resume
+            </a>
+            <a href="#projects" class="btn-outline">
+              <i class="fas fa-arrow-down"></i> Projects
+            </a>
+          </div>
+          <div class="quick-info">
+            <span><i class="fas fa-envelope"></i> afnan.shahriar27@gmail.com</span>
+            <span><i class="fas fa-phone-alt"></i> +880 1601-701444</span>
+          </div>
+          <div class="hero-social">
+            <a href="https://github.com/afnan2710" target="_blank" aria-label="github"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/afnan-shahriar-504894358/" target="_blank" aria-label="linkedin"><i class="fab fa-linkedin"></i></a>
+            <a href="https://facebook.com/afnan2710" target="_blank" aria-label="facebook"><i class="fab fa-facebook"></i></a>
+          </div>
+        </div>
+        <div class="hero-visual animate-fade-in">
+          <div class="img-frame">
+            <img src="assets/images/formal.png" alt="Afnan Shahriar" class="profile-photo" loading="lazy">
+          </div>
+          <div class="status-chip">
+            <span class="dot"></span> Open for work / research
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <script src="assets/js/main.js"></script>
+    <section id="education" class="section">
+      <div class="section-header animate-on-scroll">
+        <h2 class="section-title"><span class="title-marker">//</span> Educational Qualifications</h2>
+        <p class="section-subtitle">academic backgrounds & achievements</p>
+      </div>
+      <div class="education-grid">
+        <article class="edu-card animate-on-scroll">
+          <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+          <div class="edu-content">
+            <div class="edu-header">
+              <h3>B.Sc, Computer Science & Engineering (CSE)</h3>
+              <span class="edu-date">Feb 2022 - Present</span>
+            </div>
+            <b><div class="edu-institute">United International University (UIU)</div></b>
+            <div class="edu-score">CGPA <strong>3.68</strong>/4.00</div>
+          </div>
+        </article>
+        <article class="edu-card animate-on-scroll">
+          <div class="edu-icon"><i class="fas fa-school"></i></div>
+          <div class="edu-content">
+            <div class="edu-header">
+              <h3>Higher Secondary Certificate (HSC)</h3>
+              <span class="edu-date">July 2018 - Feb 2020</span>
+            </div>
+            <b><div class="edu-institute">Government City College, Chattogram</div></b>
+            <div class="edu-score">GPA <strong>5.00</strong>/5.00 (Golden)</div>
+          </div>
+        </article>
+        <article class="edu-card animate-on-scroll">
+          <div class="edu-icon"><i class="fas fa-pencil-alt"></i></div>
+          <div class="edu-content">
+            <div class="edu-header">
+              <h3>Secondary School Certificate (SSC)</h3>
+              <span class="edu-date">Jan 2016 - Dec 2017</span>
+            </div>
+            <b><div class="edu-institute">Chattogram Collegiate School & College</div></b>
+            <div class="edu-score">GPA <strong>5.00</strong>/5.00</div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <div class="section-header animate-on-scroll">
+        <h2 class="section-title"><span class="title-marker">//</span> Work Experience</h2>
+        <p class="section-subtitle">industry & professional roles</p>
+      </div>
+      <div class="exp-grid">
+        <article class="exp-card animate-on-scroll">
+          <div class="exp-left">
+            <span class="exp-company">Udvash Academic & Admission Care</span>
+            <span class="exp-period">Feb 2026 - Present</span>
+          </div>
+          <div class="exp-right">
+            <h3>Examiner, Exam Script Management (ESM Department)</h3>
+            <p class="exp-description">Responsible for exam script processing, quality assurance & efficient management of academic examination materials.</p>
+          </div>
+        </article>
+        <article class="exp-card animate-on-scroll">
+          <div class="exp-left">
+            <span class="exp-company">Youth School for Social Entrepreneurs (YSSE)</span>
+            <span class="exp-period">Mar 2025 - Jul 2025</span>
+          </div>
+          <div class="exp-right">
+            <h3>Intern, Operations Management Department</h3>
+            <p class="exp-description">Streamlined operational processes, coordinated event logistics & supported data management for strategic decision-making.</p>
+          </div>
+        </article>
+        <article class="exp-card animate-on-scroll">
+          <div class="exp-left">
+            <span class="exp-company">Interactive Cares</span>
+            <span class="exp-period">Apr 2023 - Aug 2024</span>
+          </div>
+          <div class="exp-right">
+            <h3>Campus Ambassador</h3>
+            <p class="exp-description">Promoted courses & events, increased campus engagement, collected student feedback & managed social media outreach.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="section-header animate-on-scroll">
+        <h2 class="section-title"><span class="title-marker">//</span> Projects</h2>
+        <p class="section-subtitle">real‑world builds & research prototypes</p>
+      </div>
+      <div class="project-grid">
+        <article class="project-card animate-on-scroll">
+          <div class="project-header">
+            <h3>SafeRideBD</h3>
+            <span class="project-status in-progress">in progress</span>
+          </div>
+          <p class="project-desc">Safe commute & travel companion with advanced safety features for Dhaka city. Smart fare calculation, route suggestion and real-time safety alerts.</p>
+          <a href="https://github.com/afnan2710/saferidebd" class="project-link" target="_blank">
+            <i class="fab fa-github"></i> repository →
+          </a>
+        </article>
+        <article class="project-card animate-on-scroll">
+          <div class="project-header">
+            <h3>Green Legacy</h3>
+            <span class="project-status completed">completed</span>
+          </div>
+          <p class="project-desc">Sustainable plant marketplace with AI-driven community platform for ensuring a greener world. Combines e-commerce with environmental consciousness.</p>
+          <a href="https://github.com/afnan2710/greenlegacy_main" class="project-link" target="_blank">
+            <i class="fab fa-github"></i> repository →
+          </a>
+        </article>
+        <article class="project-card animate-on-scroll">
+          <div class="project-header">
+            <h3>EmpowerHub</h3>
+            <span class="project-status completed">completed</span>
+          </div>
+          <p class="project-desc">E‑learning & skill‑exchange platform designed to democratize education and enable peer-to-peer knowledge sharing.</p>
+          <a href="https://github.com/afnan2710/empowerhub" class="project-link" target="_blank">
+            <i class="fab fa-github"></i> repository →
+          </a>
+        </article>
+        <article class="project-card animate-on-scroll">
+          <div class="project-header">
+            <h3>RailSafe</h3>
+            <span class="project-status completed">completed</span>
+          </div>
+          <p class="project-desc">Automated railway crack detection robot using computer vision and robotics for enhanced railway safety and maintenance efficiency.</p>
+          <span class="project-note">hardware project</span>
+        </article>
+      </div>
+    </section>
+
+    <section id="achievements" class="section">
+      <div class="section-header animate-on-scroll">
+        <h2 class="section-title"><span class="title-marker">//</span> Achievements</h2>
+        <p class="section-subtitle">awards & recognitions</p>
+      </div>
+      <div class="achievements-grid">
+        <div class="achievement-card animate-on-scroll">
+          <i class="fas fa-trophy"></i>
+          <h3>Merit Scholarship</h3>
+          <p>Achieved up to 50% merit scholarship based on academic excellence in Bachelor stage</p>
+        </div>
+        <div class="achievement-card animate-on-scroll">
+          <i class="fas fa-crown"></i>
+          <h3>Champion</h3>
+          <p>FYDP-I, UIU CSE Project Show, Summer'25</p>
+        </div>
+        <div class="achievement-card animate-on-scroll">
+          <i class="fas fa-medal"></i>
+          <h3>1st Runners-up</h3>
+          <p>Intra College Science Fair, 2019</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="section-header animate-on-scroll">
+        <h2 class="section-title"><span class="title-marker">//</span> Interests & Skills</h2>
+        <p class="section-subtitle">technical depth + research curiosity</p>
+      </div>
+      
+      <div class="skills-wrapper">
+        <div class="skill-cluster animate-on-scroll">
+          <h3 class="skill-cluster-title">🧠 core interests</h3>
+          <div class="skill-pills">
+            <span>Human Computer Interaction</span><span>Artificial Intelligence</span>
+            <span>Machine Learning</span><span>Data Science</span><span>Software Engineering</span>
+            <span>UI/UX</span><span>Advance Web Development</span>
+            <span>Mobile App Development</span><span>Computer Security</span><span>Cloud Computing</span><span>Internet of Things (IoT)</span><span>Blockchain</span>
+            <span>DevOps</span>
+          </div>
+        </div>
+        
+        <div class="skill-cluster animate-on-scroll">
+          <h3 class="skill-cluster-title">⚙️ programming & tools</h3>
+          <div class="skill-pills">
+            <span>C/C++</span><span>Java</span><span>Python</span><span>JavaScript</span>
+            <span>PHP</span><span>Node.js</span><span>React.js</span><span>Flutter</span>
+            <span>Django</span><span>Git & GitHub</span><span>Linux</span><span>Dart</span>
+            <span>MySQL</span><span>Data Structures</span><span>Algorithms</span>
+            <span>MS Office</span><span>Google Workspace</span><span>Jira</span>
+            <span>Trello</span><span>Canva</span><span>Photoshop</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="extracurricular" class="section">
+      <div class="section-header animate-on-scroll">
+        <h2 class="section-title"><span class="title-marker">//</span> Extracurricular Activities</h2>
+        <p class="section-subtitle">clubs & leadership roles</p>
+      </div>
+      
+      <div class="extra-club">
+        <h3 class="club-name">UIU English Language Forum</h3>
+        <div class="extra-list">
+          <div class="extra-item animate-on-scroll">
+            <i class="fas fa-chevron-right"></i>
+            <div><strong>Head, Research & Development (R&D)</strong> <span class="extra-date">Aug 2025 - Present</span></div>
+          </div>
+          <div class="extra-item animate-on-scroll">
+            <i class="fas fa-chevron-right"></i>
+            <div><strong>Co-head, Research & Development (R&D)</strong> <span class="extra-date">Dec 2024 - Aug 2025</span></div>
+          </div>
+          <div class="extra-item animate-on-scroll">
+            <i class="fas fa-chevron-right"></i>
+            <div><strong>Sr. Executive, Decorations & Cultural</strong> <span class="extra-date">Dec 2023 - Dec 2024</span></div>
+          </div>
+          <div class="extra-item animate-on-scroll">
+            <i class="fas fa-chevron-right"></i>
+            <div><strong>General Member</strong> <span class="extra-date">Jan 2023 - Nov 2023</span></div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="extra-club">
+        <h3 class="club-name">Other Memberships</h3>
+        <div class="extra-list">
+          <div class="extra-item animate-on-scroll">
+            <i class="fas fa-chevron-right"></i>
+            <div><strong>General Member</strong> · UIU Data Science Club</div>
+          </div>
+          <div class="extra-item animate-on-scroll">
+            <i class="fas fa-chevron-right"></i>
+            <div><strong>General Member</strong> · UIU App Forum</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VOLUNTEERING SECTION (NEW) -->
+    <section id="volunteering" class="section">
+      <div class="section-header animate-on-scroll">
+        <h2 class="section-title"><span class="title-marker">//</span> Volunteering</h2>
+        <p class="section-subtitle">giving back to community</p>
+      </div>
+      
+      <div class="volunteer-grid">
+        <!-- IELTS Invigilator -->
+        <div class="volunteer-card animate-on-scroll">
+          <div class="volunteer-header">
+            <i class="fas fa-id-card"></i>
+            <h3>Invigilator, IELTS Exam</h3>
+            <span class="volunteer-date">01/02/2026</span>
+          </div>
+          <p class="volunteer-org">IDP Education, Gulshan, Dhaka</p>
+          <p class="volunteer-desc">IELTS Exam Invigilation</p>
+          <ul class="volunteer-list">
+            <li>Ensured exam integrity and security</li>
+            <li>Facilitated smooth exam administration</li>
+          </ul>
+        </div>
+
+        <!-- Volunteer, Operations -->
+        <div class="volunteer-card animate-on-scroll">
+          <div class="volunteer-header">
+            <i class="fas fa-passport"></i>
+            <h3>Volunteer, Operations</h3>
+            <span class="volunteer-date">02/2025</span>
+          </div>
+          <p class="volunteer-org">IDP Education, Gulshan, Dhaka</p>
+          <p class="volunteer-desc">Study World Dhaka Multi Destination Roadshow (UK, USA, Canada)</p>
+          <ul class="volunteer-list">
+            <li>Managed event logistics and assisted in coordinating attendee registrations</li>
+            <li>Facilitated smooth operations by supporting exhibitors and participants</li>
+          </ul>
+        </div>
+
+        <!-- General Secretary -->
+        <div class="volunteer-card animate-on-scroll">
+          <div class="volunteer-header">
+            <i class="fas fa-hand-holding-heart"></i>
+            <h3>General Secretary</h3>
+            <span class="volunteer-date">2021 - 2022</span>
+          </div>
+          <p class="volunteer-org">Team Swapno, Chattogram</p>
+          <p class="volunteer-desc">Bangladeshi youth volunteer group dedicated to social welfare, education, and empowerment.</p>
+          <ul class="volunteer-list">
+            <li>Led community service projects for effective impact</li>
+            <li>Coordinated team operations and volunteer efforts</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="certifications" class="section">
+      <div class="section-header animate-on-scroll">
+        <h2 class="section-title"><span class="title-marker">//</span> Certifications</h2>
+        <p class="section-subtitle">verified credentials</p>
+      </div>
+      
+      <div class="cert-card animate-on-scroll">
+        <div class="cert-header">
+          <i class="fab fa-hackerrank"></i>
+          <h3>HackerRank Certification</h3>
+        </div>
+        <div class="cert-iframe-container">
+          <iframe src="https://www.hackerrank.com/certificates/iframe/ac4ffb2670d1" 
+                  title="HackerRank Certificate" 
+                  frameborder="0"
+                  allowfullscreen>
+          </iframe>
+        </div>
+        <a href="https://www.hackerrank.com/certificates/ac4ffb2670d1" target="_blank" class="cert-link">
+          View on HackerRank <i class="fas fa-external-link-alt"></i>
+        </a>
+      </div>
+    </section>
+
+    <section id="references" class="section">
+      <div class="section-header animate-on-scroll">
+        <h2 class="section-title"><span class="title-marker">//</span> References</h2>
+        <p class="section-subtitle">academic mentors</p>
+      </div>
+      
+      <div class="references-grid">
+        <div class="ref-card animate-on-scroll">
+          <h3>Dr. Mohammad Nurul Huda</h3>
+          <p class="ref-title">Professor & Ex-head, Dept. of CSE</p>
+          <p class="ref-institution">United International University</p>
+          <a href="mailto:mnh@cse.uiu.ac.bd" class="ref-email">
+            <i class="fas fa-envelope"></i> mnh@cse.uiu.ac.bd
+          </a>
+        </div>
+        
+        <div class="ref-card animate-on-scroll">
+          <h3>Dr. Muhammad Nomani Kabir</h3>
+          <p class="ref-title">Professor & UG Program Coordinator, Dept. of CSE</p>
+          <p class="ref-institution">United International University</p>
+          <a href="mailto:kabir@cse.uiu.ac.bd" class="ref-email">
+            <i class="fas fa-envelope"></i> kabir@cse.uiu.ac.bd
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-main">
+      <div class="footer-name">Afnan Shahriar</div>
+      <div class="footer-social">
+        <a href="https://github.com/afnan2710" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/afnan-shahriar-504894358/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://facebook.com/afnan2710" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="mailto:afnan.shahriar27@gmail.com"><i class="fas fa-envelope"></i></a>
+      </div>
+      <div class="footer-contact">
+        <span><i class="fas fa-phone"></i> +880 1601-701444</span>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <span class="pulse">⚡</span> designed with love & curiosity · © 2026
+    </div>
+  </footer>
+
+  <a href="https://wa.me/8801601701444" class="wa-float" target="_blank" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <script src="assets/js/main.js"></script>
 </body>
-
 </html>
