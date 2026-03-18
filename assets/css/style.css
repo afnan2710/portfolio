@@ -73,10 +73,8 @@ body {
   font-size: 16px;
   transition: background-color 0.2s ease, color 0.2s ease;
   font-weight: 700;
-  /* Bold for all body text */
 }
 
-/* All text elements bold */
 h1,
 h2,
 h3,
@@ -97,7 +95,6 @@ b {
   font-weight: 700 !important;
 }
 
-/* Keep headings extra bold */
 h1,
 h2,
 h3,
@@ -107,7 +104,6 @@ h6 {
   font-weight: 800 !important;
 }
 
-/* Small text and dates slightly less heavy but still bold */
 small,
 .date,
 .edu-date,
@@ -119,7 +115,6 @@ small,
   font-weight: 600 !important;
 }
 
-/* Site Header */
 .site-header {
   position: sticky;
   top: 0;
@@ -248,7 +243,6 @@ body.dark-mode .fa-moon {
   color: var(--accent);
 }
 
-/* MOBILE DRAWER */
 .mobile-drawer {
   display: none;
   flex-direction: column;
@@ -293,7 +287,6 @@ body.dark-mode .fa-moon {
   text-underline-offset: 4px;
 }
 
-/* Sections */
 .section {
   max-width: 1200px;
   margin: 0 auto;
@@ -325,7 +318,6 @@ body.dark-mode .fa-moon {
   font-weight: 700;
 }
 
-/* Scroll Progress */
 .scroll-progress {
   position: fixed;
   top: 0;
@@ -343,7 +335,6 @@ body.dark-mode .fa-moon {
   transition: width 0.1s ease;
 }
 
-/* Hero Section */
 .hero-section {
   padding-top: calc(var(--spacing-xl) + 1rem);
   min-height: 90vh;
@@ -545,7 +536,6 @@ body.dark-mode .fa-moon {
   }
 }
 
-/* Education Grid */
 .education-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -611,7 +601,6 @@ body.dark-mode .fa-moon {
   font-weight: 800;
 }
 
-/* Experience Grid */
 .exp-grid {
   display: flex;
   flex-direction: column;
@@ -672,7 +661,6 @@ body.dark-mode .fa-moon {
   font-weight: 700;
 }
 
-/* Projects Grid */
 .project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -759,7 +747,6 @@ body.dark-mode .fa-moon {
   text-underline-offset: 4px;
 }
 
-/* Achievements Grid */
 .achievements-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -796,7 +783,6 @@ body.dark-mode .fa-moon {
   font-weight: 700;
 }
 
-/* Skills */
 .skills-wrapper {
   display: flex;
   flex-direction: column;
@@ -833,7 +819,6 @@ body.dark-mode .fa-moon {
   cursor: default;
 }
 
-/* Extracurricular */
 .extra-club {
   margin-bottom: 2.5rem;
 }
@@ -884,10 +869,9 @@ body.dark-mode .fa-moon {
   font-weight: 600;
 }
 
-/* Certifications */
 .certifications-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
   margin-top: 1rem;
 }
@@ -947,13 +931,31 @@ body.dark-mode .fa-moon {
   margin-top: auto;
 }
 
+.cert-image-container {
+  background: var(--bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.cert-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.cert-image-container img:hover {
+  transform: scale(1.02);
+}
+
 .cert-link:hover {
   gap: 0.7rem;
   text-decoration: underline;
   text-underline-offset: 4px;
 }
 
-/* References */
 .references-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -1006,7 +1008,6 @@ body.dark-mode .fa-moon {
   text-underline-offset: 4px;
 }
 
-/* Volunteering */
 .volunteer-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -1093,7 +1094,6 @@ body.dark-mode .fa-moon {
   font-weight: bold;
 }
 
-/* Footer */
 .site-footer {
   background: var(--card-bg);
   border-top: 1px solid var(--border);
@@ -1166,7 +1166,6 @@ body.dark-mode .fa-moon {
   }
 }
 
-/* WhatsApp Float */
 .wa-float {
   position: fixed;
   bottom: 20px;
@@ -1193,7 +1192,6 @@ body.dark-mode .fa-moon {
   transform: scale(1.05);
 }
 
-/* Dropdown Menu */
 .dropdown {
   position: relative;
   display: inline-block;
@@ -1272,7 +1270,6 @@ body.dark-mode .fa-moon {
   background: var(--accent-soft);
 }
 
-/* Animations */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -1314,7 +1311,6 @@ body.dark-mode .fa-moon {
   transform: translateY(0);
 }
 
-/* Responsive Design */
 @media (max-width: 800px) {
   .desktop-nav {
     display: none;
@@ -1429,7 +1425,15 @@ body.dark-mode .fa-moon {
     padding: 1.5rem;
   }
 
-  .cert-iframe-container {
+  .cert-iframe-container,
+  .cert-image-container {
     height: 180px;
+  }
+}
+
+@media (max-width: 768px) {
+  .certifications-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
   }
 }
